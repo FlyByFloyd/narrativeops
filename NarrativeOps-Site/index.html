@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NarrativeOps</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: #0b1020;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 24px;
+      border-radius: 18px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #cbd5f5;
+      max-width: 680px;
+      margin: 0 auto 10px;
+      line-height: 1.55;
+    }
+
+    .forwho {
+      font-size: 14px;
+      color: #8aa0ff;
+      margin-bottom: 28px;
+    }
+
+    .ctaRow{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-bottom: 18px;
+    }
+
+    .download {
+      display: inline-block;
+      background: #4da3ff;
+      color: #0b1020;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .secondary {
+      display: inline-block;
+      background: transparent;
+      color: #cbd5f5;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid rgba(203,213,245,0.25);
+    }
+
+    .block {
+      background: #121833;
+      border-radius: 16px;
+      padding: 28px;
+      margin: 0 auto 42px;
+      max-width: 760px;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .block h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .block ul {
+      padding-left: 18px;
+      line-height: 1.85;
+      margin: 0;
+      color: #cbd5f5;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .shot {
+      background: #101633;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .shotTitle{
+      font-weight: 700;
+      margin: 4px 0 10px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .shot img{
+      width:100%;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .shot a:hover img{
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    footer {
+      font-size: 13px;
+      color: #8890c9;
+      padding-bottom: 40px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="logo.ico" class="logo" alt="NarrativeOps Logo"/>
+
+    <h1>NarrativeOps</h1>
+
+    <p class="subtitle">
+      A calm Windows desktop app that translates existing system report data into clear, human-readable daily and weekly summaries — focused on clarity, not distraction.
+    </p>
+
+    <p class="forwho">
+      Built for people who want understanding, not alerts.
+    </p>
+
+    <div class="ctaRow">
+      <a class="download" href="#">Download for Windows (V1)</a>
+      <a class="secondary" href="#">View release notes</a>
+    </div>
+
+    <div class="block">
+      <h2>What this is</h2>
+      <ul>
+        <li>Local-only and private</li>
+        <li>Read-only by design</li>
+        <li>Reflects on what already happened</li>
+        <li>Surfaces meaningful changes calmly</li>
+      </ul>
+
+      <h2 style="margin-top:22px;">What this is not</h2>
+      <ul>
+        <li>Not real-time monitoring</li>
+        <li>Not antivirus software</li>
+        <li>Not a performance dashboard</li>
+        <li>No alerts, no urgency</li>
+      </ul>
+    </div>
+
+    <div class="screenshots">
+      <div class="shot">
+        <div class="shotTitle">Overview</div>
+        <a href="shot-overview.png" target="_blank">
+          <img src="shot-overview.png" alt="Overview screenshot">
+        </a>
+      </div>
+
+      <div class="shot">
+        <div class="shotTitle">Scan History</div>
+        <a href="shot-history.png" target="_blank">
+          <img src="shot-history.png" alt="Scan History screenshot">
+        </a>
+      </div>
+
+      <div class="shot">
+        <div class="shotTitle">Settings</div>
+        <a href="shot-settings.png" target="_blank">
+          <img src="shot-settings.png" alt="Settings screenshot">
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      NarrativeOps runs entirely on your machine. No cloud. No tracking. No telemetry.<br/>
+      V1 reflects on existing reports rather than running live scans.
+    </footer>
+
+  </div>
+</body>
+</html>
