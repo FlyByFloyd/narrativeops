@@ -52,7 +52,7 @@
       gap:12px;
       justify-content:center;
       flex-wrap:wrap;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
 
     .download {
@@ -74,6 +74,12 @@
       text-decoration: none;
       font-weight: 600;
       border: 1px solid rgba(203,213,245,0.25);
+    }
+
+    .smallNote{
+      font-size:13px;
+      color:#aab3ff;
+      margin-bottom: 28px;
     }
 
     .block {
@@ -148,7 +154,7 @@
     <h1>NarrativeOps</h1>
 
     <p class="subtitle">
-      A calm Windows desktop app that translates existing system report data into clear, human-readable daily and weekly summaries — focused on clarity, not distraction.
+      A calm Windows desktop app that translates existing system report data into clear, human-readable daily and weekly summaries — now with built-in snapshot generation.
     </p>
 
     <p class="forwho">
@@ -156,12 +162,12 @@
     </p>
 
     <div class="ctaRow">
-      <a class="download" href="https://github.com/FlyByFloyd/narrativeops/releases/download/v1.0.0/NarrativeOps_v1.exe" target="_blank" rel="noopener">
-        Download for Windows (V1)
-      </a>
-      <a class="secondary" href="https://github.com/FlyByFloyd/narrativeops/releases" target="_blank" rel="noopener">
-        View release notes
-      </a>
+      <a class="download" href="NarrativeOps_v1.1_Windows.zip">Download for Windows (V1.1)</a>
+      <a class="secondary" href="#features">What’s new in V1.1</a>
+    </div>
+
+    <div class="smallNote">
+      Portable app • No installer • Unzip and run
     </div>
 
     <div class="block">
@@ -170,7 +176,7 @@
         <li>Local-only and private</li>
         <li>Read-only by design</li>
         <li>Reflects on what already happened</li>
-        <li>Surfaces meaningful changes calmly</li>
+        <li>Generates calm daily and weekly snapshots</li>
       </ul>
 
       <h2 style="margin-top:22px;">What this is not</h2>
@@ -179,6 +185,16 @@
         <li>Not antivirus software</li>
         <li>Not a performance dashboard</li>
         <li>No alerts, no urgency</li>
+      </ul>
+    </div>
+
+    <div class="block" id="features">
+      <h2>What’s new in V1.1</h2>
+      <ul>
+        <li>Snapshot engine runs directly inside the app</li>
+        <li>Generate Snapshot button now fully functional</li>
+        <li>Scan History shows saved daily and weekly reports</li>
+        <li>Improved stability in packaged Windows builds</li>
       </ul>
     </div>
 
@@ -207,7 +223,7 @@
 
     <footer>
       NarrativeOps runs entirely on your machine. No cloud. No tracking. No telemetry.<br/>
-      V1 reflects on existing reports rather than running live scans.
+      Snapshots generate local daily and weekly summaries you can review anytime.
     </footer>
 
   </div>
